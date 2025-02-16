@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Navbar */
+#navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#navbar header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.nav-link:hover {
+    background: #444;
+}
+
+/* Main Content */
+#main-doc {
+    margin-left: 270px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.main-section {
+    margin-bottom: 30px;
+}
+
+.main-section header {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Code Block */
+code {
+    display: block;
+    background: #f4f4f4;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    margin: 10px 0;
+    font-family: monospace;
+}
+
+/* List Styling */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
